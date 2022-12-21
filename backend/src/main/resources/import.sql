@@ -13,3 +13,5 @@ INSERT INTO tb_user_role (user_id, role_id) VALUES (2, 2);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 1);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 2);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 3);
+
+INSERT INTO tb_course (name, img_uri, img_gray_uri) VALUES ('Sandubas Java café','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1iHNZ4e-FSOhuYr9Fqsjvl2ETPE7VrM-Img&usqp=CAU','https://live.staticflickr.com/5647/21807303085_34c998a42a_z.jpg');
