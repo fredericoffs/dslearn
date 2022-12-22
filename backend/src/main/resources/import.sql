@@ -18,3 +18,7 @@ INSERT INTO tb_course (name, img_uri, img_gray_uri) VALUES ('Sandubas Java café
 
 INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('1.0', TIMESTAMP WITH TIME ZONE '2023-01-13T03:00:00Z', TIMESTAMP WITH TIME ZONE '2024-01-13T03:00:00Z', 1);
 INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('2.0', TIMESTAMP WITH TIME ZONE '2023-02-13T03:00:00Z', TIMESTAMP WITH TIME ZONE '2024-02-13T03:00:00Z', 1);
+
+INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Trilha HTML','Trilha principal do curso', 1, 'https://live.staticflickr.com/5647/21807303085_34c998a42a_z.jpg', 1, 1);
+INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Forum','Tire suas dúvidas', 2, 'https://live.staticflickr.com/5647/21807303085_34c998a42a_z.jpg', 2, 1);
+INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Lives','Lives exclusivas', 3, 'https://live.staticflickr.com/5647/21807303085_34c998a42a_z.jpg', 0, 1);
