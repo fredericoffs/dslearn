@@ -1,4 +1,4 @@
-package com.fredericoffs.dslearn;
+package com.fredericoffs.dslearn.entities;
 
 import com.fredericoffs.dslearn.entities.Lesson;
 import com.fredericoffs.dslearn.entities.Section;
