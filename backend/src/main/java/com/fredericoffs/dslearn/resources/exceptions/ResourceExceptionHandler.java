@@ -2,7 +2,9 @@ package com.fredericoffs.dslearn.resources.exceptions;
 
 
 import com.fredericoffs.dslearn.services.exceptions.DatabaseException;
+import com.fredericoffs.dslearn.services.exceptions.ForbiddenException;
 import com.fredericoffs.dslearn.services.exceptions.ResourceNotFoundException;
+import com.fredericoffs.dslearn.services.exceptions.UnauthorizedException;
 import java.time.Instant;
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
@@ -58,4 +60,17 @@ public class ResourceExceptionHandler {
     return ResponseEntity.status(status).body(error);
   }
 
+  @ExceptionHandler(ForbiddenException.class)
+  public ResponseEntity<OAuthCustomError> forbidden(ForbiddenException e,
+      HttpServletRequest request) {
+    OAuthCustomError err = new OAuthCustomError("Forbidden", e.getMessage());
+    return ResponseEntity.status(HttpStatus.FORBIDDEN).body(err);
+  }
+
+  @ExceptionHandler(UnauthorizedException.class)
+  public ResponseEntity<OAuthCustomError> unauthorized(UnauthorizedException e,
+      HttpServletRequest request) {
+    OAuthCustomError err = new OAuthCustomError("Unauthorized", e.getMessage());
+    return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(err);
+  }
 }
