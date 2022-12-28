@@ -1,4 +1,4 @@
-package com.fredericoffs.dslearn.resource.exceptions;
+package com.fredericoffs.dslearn.resources.exceptions;
 
 
 import com.fredericoffs.dslearn.services.exceptions.DatabaseException;

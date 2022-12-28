@@ -1,4 +1,4 @@
-package com.fredericoffs.dslearn.resource.exceptions;
+package com.fredericoffs.dslearn.resources.exceptions;
 
 import java.util.ArrayList;
 import java.util.List;
